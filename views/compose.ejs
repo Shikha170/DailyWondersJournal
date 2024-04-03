@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compose page</title>
+</head>
+<body>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="state the title here"name="postTitle">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Post</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"cols="70"rows="5"name="postbody"></textarea>
+          </div>
+         <button  name="btn"class="btn btn-primary" type="submit">Publish</button> 
+    </form>
+</body>
+</html>
+
+<%- include("partials/footer") -%>

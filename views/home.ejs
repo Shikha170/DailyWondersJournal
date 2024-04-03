@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+    <h1>This is Home page.</h1>
+    <p1><%=para%></p1> 
+    
+    
+<% newItemList.forEach(function(newvar){ %>
+    <h1><%=newvar.title %></h1>
+    <p1> <%=(newvar.content).substring(0,100)+'...'%><a href="/posts/<%=newvar.title %>">Read more</a></p1>
+<% }); %>
+ 
+
+
+<%- include("partials/footer") -%>
